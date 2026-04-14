@@ -1,7 +1,7 @@
 PredictFI
 
 The Solana Prediction Market Terminal
-Live dApp: predictfinance.vercel.app
+Live dApp: https://predictfinance.vercel.app
 
 Live dApp from Eitherway: https://preview.eitherway.ai/0a6b6b8b-14a4-4611-a82b-7744d8400c73/
 
