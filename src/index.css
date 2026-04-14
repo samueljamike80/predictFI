@@ -1,0 +1,134 @@
+@import '@solana/wallet-adapter-react-ui/styles.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080C10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080C10;
+  color: #E2E8F0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C2433;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3748;
+}
+
+.wallet-adapter-button {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
+  height: 36px !important;
+  padding: 0 16px !important;
+  background: linear-gradient(135deg, #7C3AED, #5B21B6) !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(124, 58, 237, 0.4) !important;
+  transition: all 0.15s ease !important;
+}
+
+.wallet-adapter-button:hover {
+  background: linear-gradient(135deg, #8B47F8, #6D28D9) !important;
+  border-color: rgba(124, 58, 237, 0.7) !important;
+  transform: none !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  font-family: 'JetBrains Mono', monospace !important;
+  background: #0D1117 !important;
+  border: 1px solid #1C2433 !important;
+  border-radius: 12px !important;
+}
+
+.wallet-adapter-modal-title {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 14px !important;
+}
+
+.wallet-adapter-button-trigger {
+  background: linear-gradient(135deg, #7C3AED, #5B21B6) !important;
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 210, 106, 0.15);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker 40s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(28, 36, 51, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 36, 51, 0.3) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.panel-glow {
+  border: 1px solid #1C2433;
+  background: #0D1117;
+}
+
+.panel-glow:hover {
+  border-color: #2D3748;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #1C2433;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #7C3AED;
+  cursor: pointer;
+  border: 2px solid #0D1117;
+}
